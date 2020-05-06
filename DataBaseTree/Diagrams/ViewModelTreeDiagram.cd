@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DataBaseTree.ViewModel.TreeViewModel.TreeViewItemViewModelBase">
+    <Position X="9" Y="5.5" Width="5.5" />
+    <NestedTypes>
+      <Class Name="DataBaseTree.ViewModel.TreeViewModel.TreeViewItemViewModelBase.FakeChild" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ViewModel\TreeViewModel\TreeViewItemViewModelBase.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAEAIAAABEQASAAAAABAAAQAAAAQAAAAI=</HashCode>
+      <FileName>ViewModel\TreeViewModel\TreeViewItemViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.ViewModel.TreeViewModel.TreeRootViewModel">
+    <Position X="4.25" Y="15.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAACAECBAAAAAABSAAAAABAAAAQgAAAEAAAA=</HashCode>
+      <FileName>ViewModel\TreeViewModel\TreeRootViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.ViewModel.TreeViewModel.MetadataViewModelBase">
+    <Position X="9.25" Y="11" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAhCAAAAAAAARAAAAAAAAAAQgAAAEAAAA=</HashCode>
+      <FileName>ViewModel\TreeViewModel\MetadataViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.ViewModel.TreeViewModel.DbObjectViewMolel">
+    <Position X="8.75" Y="15.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAABAAAAQgAAAEAAAA=</HashCode>
+      <FileName>ViewModel\TreeViewModel\DbObjectViewMolel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.ViewModel.TreeViewModel.CategoryViewModel">
+    <Position X="14.25" Y="15.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAABAAAAQgAAAEAAAA=</HashCode>
+      <FileName>ViewModel\TreeViewModel\CategoryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstApplication", "FirstApplication\FirstApplication.csproj", "{B259B646-9F3F-4E00-8F28-DA5C165A10D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfNumbers", "SumOfNumbers\SumOfNumbers.csproj", "{5A8F350E-B801-406A-95F0-9FA61DCFCEA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BullsAndCows", "BullsAndCows\BullsAndCows.csproj", "{09FF2A88-687D-4B0B-A94F-CCA81C8C8E09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleShip", "BattleShip\BattleShip.csproj", "{7B9A21B6-519F-4A2A-BA60-690035778F11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{6E242DB0-2B5D-45A3-990E-FEDF7A7A1CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tamagotchi", "Tamagochi\Tamagotchi.csproj", "{E91654D7-42FD-4B4F-BE88-98F2DB45B56C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBaseTree", "DataBaseTree\DataBaseTree.csproj", "{47CE56C8-4DAC-4418-9102-25B5D1D7E69A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B259B646-9F3F-4E00-8F28-DA5C165A10D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B259B646-9F3F-4E00-8F28-DA5C165A10D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B259B646-9F3F-4E00-8F28-DA5C165A10D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B259B646-9F3F-4E00-8F28-DA5C165A10D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A8F350E-B801-406A-95F0-9FA61DCFCEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8F350E-B801-406A-95F0-9FA61DCFCEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8F350E-B801-406A-95F0-9FA61DCFCEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8F350E-B801-406A-95F0-9FA61DCFCEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09FF2A88-687D-4B0B-A94F-CCA81C8C8E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09FF2A88-687D-4B0B-A94F-CCA81C8C8E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09FF2A88-687D-4B0B-A94F-CCA81C8C8E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09FF2A88-687D-4B0B-A94F-CCA81C8C8E09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B9A21B6-519F-4A2A-BA60-690035778F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9A21B6-519F-4A2A-BA60-690035778F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9A21B6-519F-4A2A-BA60-690035778F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9A21B6-519F-4A2A-BA60-690035778F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E242DB0-2B5D-45A3-990E-FEDF7A7A1CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E242DB0-2B5D-45A3-990E-FEDF7A7A1CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E242DB0-2B5D-45A3-990E-FEDF7A7A1CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E242DB0-2B5D-45A3-990E-FEDF7A7A1CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91654D7-42FD-4B4F-BE88-98F2DB45B56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91654D7-42FD-4B4F-BE88-98F2DB45B56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91654D7-42FD-4B4F-BE88-98F2DB45B56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91654D7-42FD-4B4F-BE88-98F2DB45B56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CE56C8-4DAC-4418-9102-25B5D1D7E69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CE56C8-4DAC-4418-9102-25B5D1D7E69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CE56C8-4DAC-4418-9102-25B5D1D7E69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CE56C8-4DAC-4418-9102-25B5D1D7E69A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE2280AD-8B50-416C-BB66-D0F5ED88F065}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev-tfs.kharkov.dbbest.com/tfs/studentprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FirstApplication\\FirstApplication.csproj
+		SccProjectName1 = FirstApplication
+		SccLocalPath1 = FirstApplication
+		SccProjectUniqueName2 = SumOfNumbers\\SumOfNumbers.csproj
+		SccProjectName2 = SumOfNumbers
+		SccLocalPath2 = SumOfNumbers
+		SccProjectUniqueName3 = BullsAndCows\\BullsAndCows.csproj
+		SccProjectName3 = BullsAndCows
+		SccLocalPath3 = BullsAndCows
+		SccProjectUniqueName4 = BattleShip\\BattleShip.csproj
+		SccProjectName4 = BattleShip
+		SccLocalPath4 = BattleShip
+		SccProjectUniqueName5 = Calculator\\Calculator.csproj
+		SccProjectName5 = Calculator
+		SccLocalPath5 = Calculator
+		SccProjectUniqueName6 = Tamagochi\\Tamagotchi.csproj
+		SccProjectName6 = Tamagochi
+		SccLocalPath6 = Tamagochi
+		SccProjectUniqueName7 = DataBaseTree\\DataBaseTree.csproj
+		SccProjectName7 = DataBaseTree
+		SccLocalPath7 = DataBaseTree
+	EndGlobalSection
+EndGlobal

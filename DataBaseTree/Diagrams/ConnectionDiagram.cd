@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DataBaseTree.Model.DataBaseConnection.ConnectionData">
+    <Position X="6.5" Y="2.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAAAAAAAAAAAAgACAAAAAACACAABhAAAAA=</HashCode>
+      <FileName>Model\DataBaseConnection\ConnectionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.DataBaseConnection.MsSqlServer">
+    <Position X="4.25" Y="6" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAIAAAAAAIAAAAAAAAAAAAACEABBAAAAA=</HashCode>
+      <FileName>Model\DataBaseConnection\MsSqlServer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.ViewModel.ConnectionViewModel.MsSqlConnectionViewModel">
+    <Position X="0.5" Y="5.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAoAgDIAApAAAgAAAACAAAAAEABAAAAAA=</HashCode>
+      <FileName>ViewModel\ConnectionViewModel\MsSqlConnectionViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.ViewModel.ConnectionViewModel.BaseConnectionViewModel">
+    <Position X="2.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAAAkAYAAAAAxASAAAAAAKAAAAAgAAAAA=</HashCode>
+      <FileName>ViewModel\ConnectionViewModel\BaseConnectionViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

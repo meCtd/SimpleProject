@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.10.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47CE56C8-4DAC-4418-9102-25B5D1D7E69A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataBaseTree</RootNamespace>
+    <AssemblyName>DataBaseTree</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.10.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.6.3.0\lib\net45\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Wpf, Version=6.3.0.0, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Wpf.6.3.0\lib\net45\Prism.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Wpf.6.3.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Convertors\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Convertors\DbEntityEnumConverter.cs" />
+    <Compile Include="Convertors\EnumToDescriptionConverter.cs" />
+    <Compile Include="Convertors\EnumToItemsSource.cs" />
+    <Compile Include="Convertors\InverseBooleanToVisibilityConverter.cs" />
+    <Compile Include="Framework\RelayCommand.cs" />
+    <Compile Include="Framework\RelayCommandGeneric.cs" />
+    <Compile Include="Model\Constants.cs" />
+    <Compile Include="Model\DataBaseConnection\ConnectionData.cs" />
+    <Compile Include="Model\DataBaseConnection\MsSqlServer.cs" />
+    <Compile Include="Model\Printers\IPrinter.cs" />
+    <Compile Include="Model\Printers\IPrinterFactory.cs" />
+    <Compile Include="Model\Printers\MsSqlDefaultPrinter.cs" />
+    <Compile Include="Model\Printers\MsSqlPrinterFactory.cs" />
+    <Compile Include="Model\Printers\MsSqlTablePrinter.cs" />
+    <Compile Include="Model\Providers\MsSqlScriptProvider.cs" />
+    <Compile Include="Model\Providers\ScriptProvider.cs" />
+    <Compile Include="Model\Tree\DbEntities\Index.cs" />
+    <Compile Include="Model\Tree\DbEntities\Server.cs" />
+    <Compile Include="Model\Tree\DbEntities\TypeObject.cs" />
+    <Compile Include="Model\Tree\DbEntityEnum.cs" />
+    <Compile Include="Model\Loaders\Loader.cs" />
+    <Compile Include="Model\Loaders\MsSqlLoader.cs" />
+    <Compile Include="Model\Tree\Chunk.cs" />
+    <Compile Include="Model\Tree\DbEntities\Constraint.cs" />
+    <Compile Include="Model\Tree\DbEntities\Database.cs" />
+    <Compile Include="Model\Tree\DbEntities\TableData.cs" />
+    <Compile Include="Model\Tree\DbEntities\Trigger.cs" />
+    <Compile Include="Model\Tree\DbEntityFactory.cs" />
+    <Compile Include="Model\Tree\DbEntities\DbType.cs" />
+    <Compile Include="Model\Tree\FullName.cs" />
+    <Compile Include="Model\Tree\DbEntities\Parameter.cs" />
+    <Compile Include="Model\Tree\DbEntities\Routine.cs" />
+    <Compile Include="Model\Tree\DbEntities\Schema.cs" />
+    <Compile Include="Model\Tree\DbEntities\Column.cs" />
+    <Compile Include="Model\Tree\DbObject.cs" />
+    <Compile Include="Model\Tree\DbEntities\Function.cs" />
+    <Compile Include="Model\Tree\DbEntities\Key.cs" />
+    <Compile Include="Model\Tree\DbEntities\Procedure.cs" />
+    <Compile Include="Model\Tree\DbEntities\Table.cs" />
+    <Compile Include="Model\Tree\DbEntities\DbView.cs" />
+    <Compile Include="Model\Tree\Hierarchy.cs" />
+    <Compile Include="Resources\PasswordBoxBehavior.cs" />
+    <Compile Include="Model\DatabaseTypeEnum.cs" />
+    <Compile Include="Tests\DatabaseTreeUnitTester.cs" />
+    <Compile Include="ViewModel\ConnectionViewModel\BaseConnectionViewModel.cs" />
+    <Compile Include="ViewModel\ConnectionViewModel\MsSqlConnectionViewModel.cs" />
+    <Compile Include="ViewModel\ConnectionWindowViewModel.cs" />
+    <Compile Include="Model\SaveData.cs" />
+    <Compile Include="ViewModel\TreeViewModel\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\TreeViewModel\DbObjectViewMolel.cs" />
+    <Compile Include="ViewModel\TreeViewModel\MetadataViewModelBase.cs" />
+    <Compile Include="ViewModel\TreeViewModel\TreeRootViewModel.cs" />
+    <Compile Include="ViewModel\TreeViewModel\TreeViewItemViewModelBase.cs" />
+    <Compile Include="ViewModel\TreeWindowViewModel.cs" />
+    <Compile Include="View\ConnectionWindow.xaml.cs">
+      <DependentUpon>ConnectionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TreeWindow.xaml.cs">
+      <DependentUpon>TreeWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Diagrams\ViewModelTreeDiagram.cd" />
+    <None Include="Diagrams\DatabaseObjectsDiagram.cd" />
+    <None Include="Diagrams\ConnectionDiagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Resources\ResourcesControlTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ResourcesDataTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ConnectionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TreeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Database.png" />
+    <Resource Include="Resources\Icons\Schema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Category.png" />
+    <Resource Include="Resources\Icons\Key.png" />
+    <Resource Include="Resources\Icons\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Trigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Column.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Connect.png" />
+    <Resource Include="Resources\Icons\Disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\View.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Properties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Parameter.png" />
+    <Resource Include="Resources\Icons\Procedure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Constraint.png" />
+    <Resource Include="Resources\Icons\Index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\LoadFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Definition.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.10.1\build\NUnit.props'))" />
+  </Target>
+</Project>

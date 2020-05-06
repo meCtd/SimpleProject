@@ -1,0 +1,138 @@
+﻿<Window x:Class="Tamagotchi.View.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tamagotchi"
+        mc:Ignorable="d"
+        Title="GameWindow"
+        Height="450"
+        Width="600"
+        MinHeight="450"
+        MinWidth="600"
+        Closing="GameWindow_OnClosing"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="SeaShell">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="8*" />
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Row="0"
+              Column="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Resources/BackgroundRoom.png"
+                            Stretch="Fill" />
+            </Grid.Background>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.7*" />
+                <ColumnDefinition Width="1.5*" />
+                <ColumnDefinition Width="0.7*" />
+                <ColumnDefinition Width="0.4*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="0.5*" />
+                <RowDefinition />
+                <RowDefinition Height="1.2*" />
+                <RowDefinition Height="0.5*" />
+
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="2"
+                   Grid.Column="1"
+                   Source="{Binding Pet.Avatar}" />
+
+            <ToggleButton Grid.Row="0"
+                          Grid.Column="3"
+                          Style="{StaticResource Pause}"
+                          Command="{Binding PauseCommand}" />
+
+            <Button Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="30"
+                    Content="Back to menu"
+                    Visibility="{Binding Pet.IsAlive,Converter={StaticResource BoolToVisibleConverter}}"
+                    Click="Button_Click" />
+        </Grid>
+
+        <Grid Grid.Row="0"
+              Grid.Column="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            
+            <ProgressBar Grid.Row="0"
+                         Value="{Binding Pet.Health,Mode=OneWay}"
+                         Background="{Binding Pet.HealthColor}"
+                         Tag="/Resources/Health.png" />
+
+            <ProgressBar Grid.Row="1"
+                         Value="{Binding Pet.Satiety,Mode=OneWay}"
+                         Background="{Binding Pet.SatietyColor}"
+                         Tag="/Resources/Satiety.png" />
+
+            <ProgressBar Grid.Row="2"
+                         Value="{Binding Pet.Mood,Mode=OneWay}"
+                         Background="{Binding Pet.MoodColor}"
+                         Tag="/Resources/Mood.png" />
+
+            <ProgressBar Grid.Row="3"
+                         Value="{Binding Pet.Purity,Mode=OneWay}"
+                         Background="{Binding Pet.PurityColor}"
+                         Tag="/Resources/Purity.png" />
+
+        </Grid>
+
+        <Grid Grid.Row="1"
+              Grid.Column="0"
+              ColumnSpan="2">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Command="{Binding FeedCommand}"
+                    Content="Feed" />
+            <Button Grid.Column="1"
+                    Command="{Binding PlayCommand}"
+                    Content="Play" />
+            <Button Grid.Column="2"
+                    Command="{Binding CleanCommand}"
+                    Content="Clean">
+
+            </Button>
+
+            <Button Grid.Column="3"
+                    Command="{Binding KillCommand}"
+                    Content="Kill" />
+
+            <ProgressBar Grid.Column="4"
+                         Maximum="{Binding Pet.MaxAge}"
+                         Value="{Binding Pet.CurrentAge,Mode=OneWay}"
+                         Orientation="Horizontal"
+                         Background="LightBlue"
+                         Tag="/Resources/LifeTime.png" />
+
+        </Grid>
+    </Grid>
+</Window>
+

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Column">
+    <Position X="15" Y="13.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Column.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Constraint">
+    <Position X="35" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Constraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Database">
+    <Position X="41" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.DbType">
+    <Position X="47.5" Y="10.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAEAAIAAABAAAAAAAAAAQAAAAAAEAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\DbType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.DbView">
+    <Position X="22.75" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\DbView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Function">
+    <Position X="32" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Function.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Index">
+    <Position X="55.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Index.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Key">
+    <Position X="38" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Key.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Parameter">
+    <Position X="18.75" Y="13.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Parameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Procedure">
+    <Position X="29" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Procedure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Routine">
+    <Position X="30.5" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Routine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Schema">
+    <Position X="44.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Schema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Server">
+    <Position X="52.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Table">
+    <Position X="25.75" Y="13.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Table.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.TableData">
+    <Position X="24.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\TableData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.Trigger">
+    <Position X="58.5" Y="10.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\Trigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbEntities.TypeObject">
+    <Position X="17" Y="10.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tree\DbEntities\TypeObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBaseTree.Model.Tree.DbObject">
+    <Position X="35.75" Y="2" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAYACICCAAgAGIAEEABEQAZBAAIQAAEEAUAgAAACQGA=</HashCode>
+      <FileName>Model\Tree\DbObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
