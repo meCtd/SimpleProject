@@ -61,7 +61,6 @@ Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 8
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dev-tfs.kharkov.dbbest.com/tfs/studentprojects
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = FirstApplication\\FirstApplication.csproj
 		SccProjectName1 = FirstApplication
